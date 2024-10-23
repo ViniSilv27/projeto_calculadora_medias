@@ -54,6 +54,6 @@ function calculaMedia(){
 
 function adicionaMedia(){
     const media = calculaMedia()
-    document.getElementById('media-notas').innerHTML = media
+    document.getElementById('media-notas').innerHTML = media.toFixed(2)
     document.getElementById('situacao-aluno').innerHTML = media >= notaMinima ? spanAprovado : spanReprovado
 }
